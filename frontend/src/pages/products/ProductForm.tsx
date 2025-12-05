@@ -6,7 +6,7 @@ import { useNavigate, useParams } from "react-router-dom";
 export default function ProductForm() {
   const { id } = useParams();
   const nav = useNavigate();
-  const [form, setForm] = useState<ProductDTO>({ name: "", price: 0, type: "", description: "", stock: 0 });
+  const [form, setForm] = useState<ProductDTO>({ name: "", price: 0, description: "", stock: 0 });
   const [categories, setCategories] = useState<any[]>([]);
 
   useEffect(() => {

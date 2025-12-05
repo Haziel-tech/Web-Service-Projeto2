@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { promotionService } from "../../services/promotion.service";
+import { promotionService } from "../services/promotion.service";
 import { Link } from "react-router-dom";
 
 export default function PromotionList() {

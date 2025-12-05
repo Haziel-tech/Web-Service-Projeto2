@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import api, { setAuthToken } from "../api";
+import api, { setAuthToken } from "../services/api";
 
 type User = { id: number; name: string; email: string; role: string };
 type AuthContextType = {

@@ -1,4 +1,4 @@
-import api from "../api";
+import api from "./api";
 export const userService = {
   list: async () => (await api.get("/users")).data,
   get: async (id:number) => (await api.get(`/users/${id}`)).data,

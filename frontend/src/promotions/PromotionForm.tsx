@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { promotionService } from "../../services/promotion.service";
-import { productService } from "../../services/product.service";
+import { promotionService } from "../services/promotion.service";
+import { productService } from "../services/product.service";
 import { useNavigate } from "react-router-dom";
 
 export default function PromotionForm() {

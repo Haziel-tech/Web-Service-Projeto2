@@ -1,4 +1,4 @@
-import api from "../api";
+import api from "./api";
 export type ProductDTO = {
   id?: number; name: string; description?: string; price: number; promoPrice?: number | null; stock?: number; categoryId?: number;
 };
