@@ -1,0 +1,12 @@
+import axios from "axios";
+const BASE = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
+const api = axios.create({ baseURL: BASE, headers: { "Content-Type": "application/json" } });
+
+export function setAuthToken(token?: string | null) {
+  if (token) api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+  else delete api.defaults.headers.common["Authorization"];
+}
+
+// inicializar com token salvo
+setAuthToken(localStorage.getItem("token"));
+export default api;
